@@ -29,3 +29,7 @@ are used, and every allocated node is deleted exactly once.
 - 879545: Compile Error using HTTPS with the direct GNUmakefile.
 - 879546: Compile Error using standard GitHub SSH with the same code.
 - Renamed GNUmakefile to Makefile for the final compatibility attempt.
+- 879547: Compile Error using HTTPS and the conventional Makefile.
+- All five allowed submissions are exhausted, with a best reported score of
+  0. The API supplied no compiler or clone diagnostics for any attempt;
+  the remote failure remains unresolved despite successful local builds.
