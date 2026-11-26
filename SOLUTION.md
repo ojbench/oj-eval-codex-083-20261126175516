@@ -12,10 +12,17 @@ are used, and every allocated node is deleted exactly once.
 
 ## Local validation
 
-- Built with the judge's `cmake .` and `make` workflow.
+- Initially built with `cmake .` and `make`; the final build uses a direct
+  GNUmakefile to avoid a dependency on the judge's CMake version.
 - Compared output with an independent Python list-removal reference for all
   3,240 pairs satisfying 1 <= m <= n <= 80.
 - Checked n = 3000 with m = 1, 2, 3, 1499, 2999, and 3000.
 - AddressSanitizer and UndefinedBehaviorSanitizer passed (1, 1), (5, 3),
   (3000, 1), and (3000, 3000), including leak checks.
 - The sample-data directory mentioned in README.md was unavailable.
+
+## Submission history
+
+- 879538: Compile Error using HTTPS; no compiler diagnostics were returned.
+- 879540: Compile Error using SSH on port 443; no diagnostics were returned.
+- Replaced CMake with a direct GNUmakefile after these failures.
